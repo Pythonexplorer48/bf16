@@ -23,9 +23,14 @@ The package includes a compiled assembly executable for fast conversion.
 Jeremy Gordon thank you for making golink
 
 ## Changelog
-1.0.1
+### 1.0.1
 bf16 has completely changed with the last update here is the main stuff
-* added all operators that function that exist within float32 to bfloat16
-* optimized to not have to open and exit bf16.exe and bf16.obj everytime
+* added nearly all operators that function that exist within float32 to bfloat16
+* instead of bf16.obj and bf16.exe it is now just a bf16.dll
+* optimized to not have to open and exit bf16.dll everytime
 * added Changelog
 * added acknowlegement to golink I forgot
+### 1.0.2
+bf16 has gained a way for people to know they are downloading a safe package
+* corrected README.md old changelog for 1.0.1
+* added repo and its link
