@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bf16"
+version = "1.0.1"
+description = "High-performance BFloat16 conversion powered by x64 Assembly."
+authors = [{name = "Kent"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Scientific/Engineering",
+    "Intended Audience :: Developers",
+]
+
+[tool.setuptools]
+packages = ["bf16"]
+
+[tool.setuptools.package-data]
+bf16 = ["*.dll"]
+
+[tool.setuptools.exclude-package-data]
+bf16 = ["*.obj", "*.asm", "*.bat", "test_newbf16.py"]
