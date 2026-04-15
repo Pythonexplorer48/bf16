@@ -34,3 +34,7 @@ bf16 has completely changed with the last update here is the main stuff
 bf16 has gained a way for people to know they are downloading a safe package
 * corrected README.md old changelog for 1.0.1
 * added repo and its link
+### 1.0.3
+bf16 now has more verified details
+* added more verified details
+* made SECURITY.md workflow and CODEOWNERS
