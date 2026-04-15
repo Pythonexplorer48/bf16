@@ -23,7 +23,7 @@ jobs:
       - name: Build Windows Wheel
         run: |
           pip install "setuptools<=59.6.0" wheel build
-          python -m build --wheel --no-isolation.
+          python -m build --wheel --no-isolation
 
       - name: Build Windows Wheel
         run: python setup.py bdist_wheel
