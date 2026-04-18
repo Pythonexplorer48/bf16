@@ -18,17 +18,15 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: "3.6"
+        python-version: "3.10" # Use 3.10 to build the package
 
     - name: Install build tools
       run: |
-        # Upgrade pip to the last version that supported 3.6
-        python -m pip install --upgrade "pip<22.0"
-        # Manually install the specific versions you need
-        python -m pip install "setuptools<=59.6.0" "wheel" "build"
-        
+        python -m pip install --upgrade pip
+        pip install build wheel
+
     - name: Build Windows Wheel
-      run: python -m build --wheel --no-isolation
+      run: python -m build --wheel
 
     - name: Publish to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
