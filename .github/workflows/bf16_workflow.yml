@@ -1,6 +1,8 @@
 name: Publish to PyPI
 
 on:
+  push:
+    branches: [main]
   release:
     types: [published]
 
@@ -18,7 +20,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: "3.10" # Use 3.10 to build the package
+        python-version: "3.10"
 
     - name: Install build tools
       run: |
@@ -29,4 +31,5 @@ jobs:
       run: python -m build --wheel
 
     - name: Publish to PyPI
+      if: github.event_name == 'release'
       uses: pypa/gh-action-pypi-publish@release/v1
