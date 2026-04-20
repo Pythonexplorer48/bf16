@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this library in your research, please cite it as follows."
+authors:
+- family-names: "Anderson"
+  given-names: "Kent"
+title: "bf16: Optimized BFloat16 for Windows x64"
+version: 1.0.4
+date-released: 2024-04-18
+url: "https://github.com/Pythonexplorer48/bf16"

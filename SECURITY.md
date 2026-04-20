@@ -26,6 +26,5 @@ To ensure you are using an authentic version of this package:
 
 ## Binary Integrity
 To ensure the `bf16.dll` you receive is the one I built:
-- **SHA-256 Checksum:** I provide checksums for every release.
 - **Trusted Build:** The DLL is packaged by GitHub Actions directly from this source code.
 - **Transparency:** The `bf16.asm` is provided so you can compile it yourself using the included `comp.bat` to verify the bytes match.

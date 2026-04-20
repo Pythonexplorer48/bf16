@@ -1,34 +1,24 @@
 Metadata-Version: 2.4
 Name: bf16
-Version: 1.0.2
+Version: 1.0.4
 Summary: High-performance BFloat16 conversion powered by x64 Assembly.
 Author: Kent
-License: MIT License
-        
-        Copyright (c) 2026 Kent
-        
-        Permission is hereby granted, free of charge, to any person obtaining a copy
-        of this software and associated documentation files (the "Software"), to deal
-        in the Software without restriction, including without limitation the rights
-        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-        copies of the Software, and to permit persons to whom the Software is
-        furnished to do so, subject to the following conditions:
-        
-        The above copyright notice and this permission notice shall be included in all
-        copies or substantial portions of the Software.
-        
-        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-        SOFTWARE.
+License: MIT
 Project-URL: Homepage, https://github.com/Pythonexplorer48/bf16
 Project-URL: Repository, https://github.com/Pythonexplorer48/bf16
+Project-URL: Wiki, https://github.com/Pythonexplorer48/bf16/wiki
+Project-URL: Issues, https://github.com/Pythonexplorer48/bf16/issues
+Project-URL: Changelog, https://github.com/Pythonexplorer48/bf16/blob/main/CHANGELOG.md
+Project-URL: Architecture, https://github.com/Pythonexplorer48/bf16/blob/main/ARCHITECTURE.md
+Project-URL: Support, https://github.com/Pythonexplorer48/bf16/blob/main/SUPPORT.md
+Project-URL: Security, https://github.com/Pythonexplorer48/bf16/blob/main/SECURITY.md
+Project-URL: Code of Conduct, https://github.com/Pythonexplorer48/bf16/blob/main/CODE_OF_CONDUCT.md
+Keywords: bfloat16,x64,assembly,high-performance,data-conversion,windows
+Classifier: Development Status :: 5 - Production/Stable
 Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: Microsoft :: Windows
-Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Classifier: Intended Audience :: Developers
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
@@ -38,10 +28,44 @@ Dynamic: license-file
 # bf16
 BF16 is a Python package for converting floating-point numbers to BFloat16 format using optimized Windows x86-64 assembly.
 
+## Live Data
+### Pepy.tech data
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/bf16?period=total&units=INTERNATIONAL_SYSTEM&left_color=GRAY&right_color=BLUE&left_text=Total+Downloads)](https://pepy.tech/projects/bf16)[![PyPI Downloads](https://static.pepy.tech/personalized-badge/bf16?period=monthly&units=INTERNATIONAL_SYSTEM&left_color=GRAY&right_color=BLUE&left_text=Downloads+Last+Month)](https://pepy.tech/projects/bf16)[![PyPI Downloads](https://static.pepy.tech/personalized-badge/bf16?period=weekly&units=INTERNATIONAL_SYSTEM&left_color=GRAY&right_color=BLUE&left_text=Downloads+Last+Week)](https://pepy.tech/projects/bf16)
+### Github.com data
+![Stars](https://img.shields.io/github/stars/Pythonexplorer48/bf16?style=flat-square&color=gold)
+![Forks](https://img.shields.io/github/forks/Pythonexplorer48/bf16?style=flat-square&color=blue)
+![Open Issues](https://img.shields.io/github/issues/Pythonexplorer48/bf16?style=flat-square&color=red)
+![Open PRs](https://img.shields.io/github/issues-pr/Pythonexplorer48/bf16?style=flat-square&color=green)
+![License](https://img.shields.io/github/license/Pythonexplorer48/bf16?style=flat-square&color=orange)
+![Repo Size](https://img.shields.io/github/repo-size/Pythonexplorer48/bf16?style=flat-square&label=Repo%20Size&color=brightgreen)
+![Top Language](https://img.shields.io/github/languages/top/Pythonexplorer48/bf16?style=flat-square&color=8A2BE2)
+![Code Size](https://img.shields.io/github/languages/code-size/Pythonexplorer48/bf16?style=flat-square&color=success)
+![Last Commit](https://img.shields.io/github/last-commit/Pythonexplorer48/bf16?style=flat-square&color=brightgreen)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/Pythonexplorer48/bf16?style=flat-square&color=blueviolet)
+![Contributors](https://img.shields.io/github/contributors/Pythonexplorer48/bf16?style=flat-square&color=gold)
+![Followers](https://img.shields.io/github/followers/Pythonexplorer48?style=social)
+![Watchers](https://img.shields.io/github/watchers/Pythonexplorer48/bf16?style=flat-square&color=blue)
+### Pypi.org data
+![PyPI Version](https://img.shields.io/pypi/v/bf16?style=flat-square&color=blue)
+![Python Versions](https://img.shields.io/pypi/pyversions/bf16?style=flat-square&color=yellow)
+### Socket.dev data
+[![Socket](https://socket.dev/api/badge/pypi/package/bf16)](https://socket.dev/pypi/package/bf16)
+## Virustotal Scan Results
+[VirusTotal](https://www.virustotal.com/gui/file/c6dfcebe3aefb6a3835f245576b145b2caff876bf25b3ce44dc58d97689fde30)
+### More Badges
+![Platform](https://img.shields.io/badge/platform-windows-0078d7?style=flat-square&logo=windows)
+![Dependencies](https://img.shields.io/badge/dependencies-none-success?style=flat-square)
+![CPU](https://img.shields.io/badge/arch-x86--64-red?style=flat-square)
+![Instruction Set](https://img.shields.io/badge/ISA-x64_Assembly-orange?style=flat-square)
+![Security Policy](https://img.shields.io/badge/security-policy-brightgreen?style=flat-square)
+
 ## Installation
+To install bf16 the 2 easiest options are either run this command:
 ```bash
 pip install bf16
 ```
+or click this button to download a zip containing only necessary files to download and also extract it:
+[![Download bf16.zip](https://img.shields.io/badge/Download-bf16.zip-blue?style=for-the-badge&logo=windows)](bf16.zip?raw=true)
 ## Usage
 ```python
 import bf16
@@ -71,3 +95,12 @@ bf16 has completely changed with the last update here is the main stuff
 bf16 has gained a way for people to know they are downloading a safe package
 * corrected README.md old changelog for 1.0.1
 * added repo and its link
+### 1.0.3
+bf16 now has more verified details
+* added more verified details
+* made SECURITY.md workflow and CODEOWNERS
+### 1.0.4
+bf16 now has finished documentation.
+* Finished community Standards
+* Added downloading Zip file allowing you to only download only necessary files saving memory including README.md, LICENSE, bf16/\_\_init__.py, and bf16/bf16.dll
+NOTE: go to [[CHANGELOG.md]] for more specific information on the changelog
