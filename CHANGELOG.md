@@ -32,3 +32,18 @@
 ### Added more files
 * In the repository you'll notice a lot more files that add a lot of extra things on github that change what it does
 * The new files are .github/ISSUE_TEMPLATE/bug_report.md, .github/ISSUE_TEMPLATE/optimization_or_feature.md, .github/pull_request_template.md, .github/CONTRIBUTING.md, STATUS.md, SUPPORT.md, zip.bat, bf16.zip, citation.cff, BENCHMARK.md, ARCHITECTURE.md, CHANGELOG.md, and CODE_OF_CONDUCT.md
+## 1.0.5
+### Optimized bf16.dll
+* I optimized the bf16.dll by doing many things
+* I used Vectorization which is a way to use SIMD instructions to make it faster
+* I merged functions to make it much smaller leading to more speed
+* I merged sections to make it much smaller leading to more speed
+### New tool FASM
+* I switched from using GoLink&NASM to FASM for increased speed and smaller dll
+* It was very very hard getting FASM to become a working dll but I did it and it was worth it
+### Added cffi
+* at the cost of adding a dependency I switched from using ctypes to cffi to make \_\_init__.py much faster
+### Used github to run batch files
+* I switched from running the batch files on my computer to running them on github so you know that these are the real files and code
+### updated README.md
+* I updated some of the README.md's grammar problems

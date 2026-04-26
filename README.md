@@ -44,17 +44,19 @@ or click this button to download a zip containing only necessary files to downlo
 import bf16
 
 x = bf16.bfloat16(3.14)
-print(x)  # Outputs the BFloat16 approximation as a float and for the record it also actually output 3.12 because its a real breainfloat16
+print(x)  # Outputs the BFloat16 approximation as a float and for the record it also actually output 3.125 because its a real brain-float16
 print(f"Size: {len(x.data)} bytes")  # Always 2 bytes
 ```
 
 ## Requirements
 - Windows AMD x86-64
 - Python 3.6+
+- cffi
 The package includes a compiled assembly executable for fast conversion.
 
 ## Acknowledgments
-Jeremy Gordon thank you for making golink
+* Thank you to Tomasz Grysztar for his work on FASM which made it possible to optimize bf16.dll and make it smaller
+* Jeremy Gordon thank you for making golink which helped with earlier versions of bf16
 
 ## Changelog
 ### 1.0.1
@@ -77,3 +79,8 @@ bf16 now has finished documentation.
 * Finished community Standards
 * Added downloading Zip file allowing you to only download only necessary files saving memory including README.md, LICENSE, bf16/\_\_init__.py, and bf16/bf16.dll
 NOTE: go to [[CHANGELOG.md]] for more specific information on the changelog
+### 1.0.5
+bf16 is now much faster!
+* optimized bf16.dll by using vectorization merged functions and merged sections
+* switched from GoLink&NASM to FASM for increased speed and smaller dll
+* at the cost of adding a dependency uses cffi to make \_\_init__.py much faster

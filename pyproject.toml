@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bf16"
-version = "1.0.4"
+version = "1.0.5"
 description = "High-performance BFloat16 conversion powered by x64 Assembly."
 readme = "README.md"
 requires-python = ">=3.6"
@@ -21,6 +21,10 @@ classifiers = [
     "Intended Audience :: Developers",
 ]
 
+dependencies = [
+    "cffi>=1.15.1",
+]
+
 [project.urls]
 "Homepage" = "https://github.com/Pythonexplorer48/bf16"
 "Repository" = "https://github.com/Pythonexplorer48/bf16"
@@ -31,6 +35,7 @@ classifiers = [
 "Support" = "https://github.com/Pythonexplorer48/bf16/blob/main/SUPPORT.md"
 "Security" = "https://github.com/Pythonexplorer48/bf16/blob/main/SECURITY.md"
 "Code of Conduct" = "https://github.com/Pythonexplorer48/bf16/blob/main/CODE_OF_CONDUCT.md"
+"Contributing" = "https://github.com/Pythonexplorer48/bf16/blob/main/.github/CONTRIBUTING.md"
 
 [tool.setuptools]
 packages = ["bf16"]

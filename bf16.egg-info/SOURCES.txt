@@ -1,9 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-bf16/__init__.py
-bf16/bf16.dll
-bf16.egg-info/PKG-INFO
-bf16.egg-info/SOURCES.txt
-bf16.egg-info/dependency_links.txt
-bf16.egg-info/top_level.txt
