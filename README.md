@@ -24,7 +24,7 @@ BF16 is a Python package for converting floating-point numbers to BFloat16 forma
 ### Socket.dev data
 [![Socket](https://socket.dev/api/badge/pypi/package/bf16)](https://socket.dev/pypi/package/bf16)
 ## Virustotal Scan Results
-[VirusTotal](https://www.virustotal.com/gui/file/c6dfcebe3aefb6a3835f245576b145b2caff876bf25b3ce44dc58d97689fde30)
+[VirusTotal](https://www.virustotal.com/gui/file/93fdea59cb19f316aabf96434480cec3fc79a83d3df00b181aee0f35c7681c2a/detection)
 ### More Badges
 ![Platform](https://img.shields.io/badge/platform-windows-0078d7?style=flat-square&logo=windows)
 ![Dependencies](https://img.shields.io/badge/dependencies-none-success?style=flat-square)
