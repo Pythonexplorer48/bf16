@@ -26,7 +26,7 @@ jobs:
 
     - name: Run Assembly Build
       # This runs fasm.exe and your benchmarking script
-      run: .\comp_dev.bat
+      run: .\comp.bat
 
     - name: Run Packaging Script
       # This runs your zipping logic
